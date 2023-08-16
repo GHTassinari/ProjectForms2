@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Links redirecting to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Create your event</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Poppins (400[Regular]) and Poppins(400[Regular]) fonts being imported from google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="page">
+      <!-- Header -->
+      <header>
+        <h1>Mentorship</h1>
+
+        <p>Fill out the form below to schedule your mentorship.</p>
+      </header>
+
+      <!-- All the form structures -->
+      <form id="form">
+        <!-- The form structures and inputs will be placed here, inside the form tag -->
+        <!-- Personal information part of the Hero -->
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Personal Information</legend>
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="mentorship-name">Name</label>
+                <input type="text" id="mentorship-name" />
+              </div>
+              <div class="input-wrapper">
+                <label for="mentorship-surname">Surname</label>
+                <input type="text" id="mentorship-surname" />
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="mentorship-email"
+                >E-mail<span>(insert a valid e-mail)</span></label
+              >
+              <input type="email" id="mentorship-email" />
+            </div>
+            <div class="input-wrapper">
+              <label for="mentorship-password"
+                >Password<span>(minimum of 8 characters)</span></label
+              >
+              <input type="password" id="mentorship-password" minlength="8" />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Mentor information part of the Hero -->
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Mentor Information</legend>
+            <div class="input-wrapper">
+              <label for="mentorship-mentor"
+                >Name of the mentor<span>(just the first name)</span></label
+              >
+              <input type="text" id="mentorship-mentor" />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Your available time part of the Hero -->
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Your available times</legend>
+
+            <div class="date-mentorship">
+              <aside class="mentorship-label">First Mentorship</aside>
+              <div class="col-3">
+                <div class="input-wrapper">
+                  <label for="mentorship-day"
+                    >Date<span>(DD/MM/AAAA)</span></label
+                  >
+                  <input type="date" id="mentorship-day" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="mentorship-from">From</label>
+                  <input type="time" id="mentorship-from" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="mentorship-to">To</label>
+                  <input type="time" id="mentorship-to" />
+                </div>
+              </div>
+            </div>
+
+            <div class="date-mentorship">
+              <aside class="mentorship-label">Second Mentorship</aside>
+              <div class="col-3">
+                <div class="input-wrapper">
+                  <label for="mentorship-day"
+                    >Date<span>(DD/MM/AAAA)</span></label
+                  >
+                  <input type="date" id="mentorship-day" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="mentorship-from">From</label>
+                  <input type="time" id="mentorship-from" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="mentorship-to">To</label>
+                  <input type="time" id="mentorship-to" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <!-- Footer and button of the form -->
+      <footer>
+        <input type="submit" class="button" value="Save Event" form="form" />
+      </footer>
+    </div>
+  </body>
+</html>
